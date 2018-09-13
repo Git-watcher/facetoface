@@ -51,4 +51,16 @@ function loop($a){
     }
     return $c;
 }
-var_dump(loop(10));
+//var_dump(loop(10));
+
+//递归回文
+function huiwen(int $n)
+{
+    echo $n.'<br/>';
+    if($n>1)
+    {
+        huiwen($n-1);
+    }
+    echo $n;
+}
+huiwen(5);
