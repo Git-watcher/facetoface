@@ -31,9 +31,9 @@ function play($b)
 //var_dump(strtotime('2018-10-1 12:10:10'));
 
 //路径
-//var_dump(basename('./abc/efg/index.php'));
-//var_dump(dirname('./abc/efg/index.php'));
-//var_dump(pathinfo('./abc/efg/index.php'));
+var_dump(basename('./abc/efg/index.php'));
+var_dump(dirname('./abc/efg/index.php'));
+var_dump(pathinfo('./abc/efg/index.php'));
 
 //定义目录
 $path = "../info";
@@ -46,7 +46,7 @@ while (($file = readdir($res)) != false){//注意括号
 //关闭目录
 closedir($res);
 
-var_dump(stat('../info'));//文件或目录详细信息
+//var_dump(stat('../info'));//文件或目录详细信息
 
 //var_dump($_SERVER);
 
@@ -60,3 +60,4 @@ var_dump(stat('../info'));//文件或目录详细信息
 //header("Accept-Length:".$filesize );
 //header("Content-Disposition: attachment; filename=".$name);
 //readfile($file);
+
